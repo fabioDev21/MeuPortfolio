@@ -1,0 +1,31 @@
+:root {
+    --prime-color: #D7D2CC;
+    --second-color: #0D1117;
+    --third-color: #39414E;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.lista__projetos{
+    display: grid;
+    grid-template-areas: 
+    "filtro"
+    "lista";
+}
+.link-text{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.titulo{
+    margin: 0.3em;
+    width: 100%;
+    font-size: 28px;
+}
+.bloco{
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var(--prime-color);
+    color: var(--second-color);
+}
