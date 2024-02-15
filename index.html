@@ -6,33 +6,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sobre-mim.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/ferramentas.css">
     <script src="js/script.js"></script>
     <title>Portfolio Fabio da Silva</title>
 </head>
 <body>
     <div id="suBody">
-        <nav id="navegacao" class="alinhados">
+        <nav id="navegacao">
             <span title="Idioma">
                 <a href="#" class="link-text navegacao__item">
                     <p class="fa fa-globe fa-lg"></p>
                 </a>
             </span>
-            <span>
-                <a href="#" class="link-text navegacao__item">
+            <!-- TODO: Adicionar preview do menu a partir do hover do usuário -->
+            <span title="Menu"> 
+                <a href="#" class="link-text navegacao__item--menu">
                     <p class="fa fa-bars fa-lg"></p>
                 </a>
             </span>
-            <span>
+            <span title="Modo claro">
                 <a href="" class="link-text navegacao__item">
                     <p class="fa fa-sun-o fa-lg"></p>
                 </a>
             </span>
         </nav>
         <section id="sobre">
-            <h1 class="titulo"> Quem sou eu? </h1>
+            <h1 class="titulo"> Sobre mim </h1>
             <div class="bloco">
-                <p>Olá, me chamo Fábio da Silva, tenho 19 anos e gosto muito de resolver problemas de tecnologia. </p>
-                <p>No momento estou cursando Análise e desenvolvimento de sistemas e me especializando na área do Frontend com cursos extracurriculares.</p>
+                <a class="link-text" href="https://www.linkedin.com/in/fabiodasilvaramalho/" target="_blank">
+                    <img id="foto-perfil" src="https://media.licdn.com/dms/image/D4D03AQHv1psCsqrJeQ/profile-displayphoto-shrink_200_200/0/1697245450846?e=2147483647&v=beta&t=fpA9hbVnMYFwm5yF6X0LxomjxdMaa8w-dC1mN9x6cdk" alt="foto">
+                </a> 
+                <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desenvolvimento de sistemas e me especializando em frontend com outros cursos </p>
             </div>
         </section>
         <section id="projetos" >
@@ -50,9 +57,9 @@
                     </a>
                 </span>
                 <span id="lista__projetos">
-                    <a href="#" class="link-text lista__projetos--item">
-                        <div>
-                            <img src="img/print-receitar-cozinhar.png" alt="Projeto onde é apresentado um site de notícias">
+                    <a href="#" class="link-text">
+                        <div class="lista__projetos--item">
+                            <img src="https://img.freepik.com/fotos-gratis/papel-de-parede-abstrato-ultra-detalhado-da-nebulosa-4_1562-749.jpg" alt="Projeto onde é apresentado um site de notícias">
                             <span>
                                 <div>
                                     <h3 class="lista__item--titulo"> Site de receitas </h3>
@@ -62,6 +69,28 @@
                                     <h3 class="lista__item--titulo"> Ferramentas usadas </h3>
                                     <img src="img/html5.png" alt="icone html5">
                                     <img src="img/css.png" alt="icone css3">
+                                </div>
+                                <div>
+                                    <h3 class="lista__item--titulo">Repo:</h3>
+                                    <p>link repositório</p>
+                                </div>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="link-text">
+                        <div class="lista__projetos--item">
+                            <img src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?w=740&t=st=1707962538~exp=1707963138~hmac=27f5d43cc9e565f9a1e5f288e92872abd54ea06b45dd7191b9197dc1f9e75c51" alt="Projeto onde é apresentado um site de notícias">
+                            <span>
+                                <div>
+                                    <h3 class="lista__item--titulo"> Site de receitas </h3>
+                                    <p>Projeto desenvolvido para a faculdade</p>
+                                </div>
+                                <div>
+                                    <h3 class="lista__item--titulo"> Ferramentas usadas </h3>
+                                    <span id="icones">
+                                        <img src="img/html5.png" alt="icone html5">
+                                        <img src="img/css.png" alt="icone css3">
+                                    </span>
                                 </div>
                                 <div>
                                     <h3 class="lista__item--titulo">Repo:</h3>

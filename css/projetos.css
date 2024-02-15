@@ -1,0 +1,56 @@
+#projetos{
+    grid-area: projetos;
+}
+#projetos > #lista{
+    display: grid;
+    grid-template-areas: 
+    "filtro__projetos"
+    "lista__projetos";
+    grid-template-rows: 15% 75%;
+    height: 300px;
+}
+#projetos > .bloco{
+    padding: 0.5em;
+}
+#filtro__projetos{
+    grid-area: filtro__projetos;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.3em;
+}
+#lista__projetos{
+    grid-area: lista__projetos;
+    overflow: auto;
+}
+
+/* TODO: Mudar orientação da lista e seguir com os itens em cards verticais ao invés de horizontais */
+
+.lista__projetos--item{
+    display: flex;
+    align-items: center;
+    margin: 1em 0em;
+    border-radius: 10px;
+    padding: 0.5em;
+    height: 170px;
+    background-color: rgba( 68, 20, 20, 0.2);
+    color: #fff;
+    transition: 0.4s;
+}
+.lista__projetos--item > span{
+    margin-inline-start: 0.5em;
+    font-size: 18px ;
+}
+.lista__item--titulo{
+    text-align: center;
+
+}
+.lista__projetos--item > img{
+    border-radius: 10px;
+    width: 240px;
+    height: 150px;
+}
+.lista__projetos--item:hover{
+    
+    background-color: rgba( 68, 20, 20, 0.8);
+}
