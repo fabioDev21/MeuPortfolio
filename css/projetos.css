@@ -6,8 +6,8 @@
     grid-template-areas: 
     "filtro__projetos"
     "lista__projetos";
-    grid-template-rows: 15% 75%;
-    height: 300px;
+    grid-template-rows: 11% 89%;
+    height: 100%;
 }
 #projetos > .bloco{
     padding: 0.5em;
@@ -15,25 +15,43 @@
 #filtro__projetos{
     grid-area: filtro__projetos;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 60%;
     align-items: center;
     margin: 0.3em;
 }
 #lista__projetos{
     grid-area: lista__projetos;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
     overflow: auto;
+    height: 360px;
+    cursor: grab;
 }
 
 /* TODO: Mudar orientação da lista e seguir com os itens em cards verticais ao invés de horizontais */
 
+.filtro__item{
+    font-size: 18px;
+    background-color: var(--bg-color-inSubody);
+    color: #fff;
+    transition: 0.4s;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.selecionado{
+    background-color: #1d5f2bae;
+}
 .lista__projetos--item{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 1em 0em;
     border-radius: 10px;
     padding: 0.5em;
-    height: 170px;
-    background-color: rgba( 68, 20, 20, 0.2);
+    height: 320px;
+    background-color: var(--bg-color-inSubody);
     color: #fff;
     transition: 0.4s;
 }
@@ -43,14 +61,13 @@
 }
 .lista__item--titulo{
     text-align: center;
-
 }
 .lista__projetos--item > img{
     border-radius: 10px;
     width: 240px;
     height: 150px;
 }
-.lista__projetos--item:hover{
-    
-    background-color: rgba( 68, 20, 20, 0.8);
+.lista__projetos--item:hover,.filtro__item:hover{
+    color: #fff;
+    background-color: var(--bgHover-color-inSubody);
 }

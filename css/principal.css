@@ -3,6 +3,8 @@ body{
     grid-template-areas: 
     "suBody"
     "footer";
+    grid-template-rows: 90% 10%;
+    gap: 1em;
     padding-top: 3em;
     background-color: var(--third-color);
 }
@@ -14,11 +16,12 @@ body{
     "sobre"
     "projetos"
     "ferramentas";
+    grid-template-rows: 5% 27% 52% 12%;
+    gap: 1em;
     justify-content: center;
-    margin: 0;
+    align-items: center;
     border-radius: 50px;
-    padding: 1.5em 1em;
-    height: 100vh;
+    padding: 1.5em 0.5em;
     background-color: var(--second-color);
     color: var(--prime-color);
 }
@@ -27,9 +30,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 2.5em auto;
-    width: 30%;
-    height: 60px;
+    margin: auto;
     text-align: center;
     font-size: 1.3em;
     color: #fff;

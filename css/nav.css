@@ -11,18 +11,17 @@
     background-color: var(--prime-color);
 }
 .navegacao__item, .navegacao__item--menu{
-    background-color: var(--second-color);
-    color: var(--prime-color);
+    background-color: var(--bg-color-inSubody);
+    color: #fff;
     padding: 0.2em;
-    border-radius: 40px;
-    font-size: 22px;
-    border-radius: 40px;
+    font-size: 20px;
+    border-radius: 30px;
     transition: 0.4s;
 }
 .navegacao__item--menu{
     border-radius: 5px;
 }
 .navegacao__item:active, .navegacao__item:hover, .navegacao__item--menu:hover{
-    background-color: #7f7f7f;
-    color: #1f1f1f;
+    background-color: var(--bgHover-color-inSubody);
+    color: #fff;
 }

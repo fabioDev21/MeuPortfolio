@@ -19,8 +19,14 @@
     font-size: 16px;
 }
 #foto-perfil{
-    box-shadow: -6px 3px var(--third-color);
     border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
     width: 170px;
     height: 170px;
+    transition: 0.4s;
+}
+#foto-perfil:hover{
+    rotate: -2deg;
+    box-shadow: -4px 4px 6px var(--bgHover-color-inSubody);
 }

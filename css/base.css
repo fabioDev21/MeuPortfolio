@@ -2,17 +2,13 @@
     --prime-color: #D7D2CC;
     --second-color: #0D1117;
     --third-color: #39414E;
+    --bg-color-inSubody: rgba( 23, 0, 20, 0.5);
+    --bgHover-color-inSubody: rgba( 23, 0, 20, 0.8);
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-.lista__projetos{
-    display: grid;
-    grid-template-areas: 
-    "filtro"
-    "lista";
 }
 .link-text{
     color: var(--main-color);
