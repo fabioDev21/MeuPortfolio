@@ -3,7 +3,7 @@ body{
     grid-template-areas: 
     "suBody"
     "footer";
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 95% 5%;
     gap: 1em;
     padding-top: 3em;
     background-color: var(--third-color);
@@ -16,10 +16,9 @@ body{
     "sobre"
     "projetos"
     "ferramentas";
-    grid-template-rows: 5% 27% 52% 12%;
-    gap: 1em;
+    grid-template-rows: 4% 24% 46% auto;
+    gap: 1.3em;
     justify-content: center;
-    align-items: center;
     border-radius: 50px;
     padding: 1.5em 0.5em;
     background-color: var(--second-color);
@@ -30,6 +29,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     margin: auto;
     text-align: center;
     font-size: 1.3em;
@@ -38,14 +38,32 @@ footer{
 #footer__titulo{
     font-size: 28px;
 }
+footer > span{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 5em;
+}
 footer > span > a > img{
-    margin: 0.5em;
     padding: 0.3em;
     width: 60px;
-    height: 60px;
     transition: 0.4s;
     border-radius: 10px;
 }
 footer > span > a > img:hover{
     background-color: rgba(255, 255, 255, 0.3);
+}
+.link-text{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.titulo{
+    margin-bottom: 0.4em;
+    text-align: center;
+    font-size: 28px;
+}
+.bloco{
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var(--prime-color);
+    color: var(--second-color);
 }

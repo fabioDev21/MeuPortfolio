@@ -8,25 +8,21 @@
 #sobre > .bloco{
     display: flex;
     align-items: center;
-    height: 200px;
+    padding: 0.5em;
 }
 #sobre > .titulo{
     cursor: default;
 }
 #sobre > .bloco > p{
-    cursor: default;
-    padding-inline-start: 0.5em;
+    padding-inline-start: 1em;
     font-size: 16px;
+    font-weight: 500;
+    cursor: default;
+    color: var(--second-color);
 }
 #foto-perfil{
-    border-radius: 30px;
-    object-fit: cover;
-    object-position: center;
-    width: 170px;
-    height: 170px;
+    border-radius: 20px;
     transition: 0.4s;
-}
-#foto-perfil:hover{
-    rotate: -2deg;
-    box-shadow: -4px 4px 6px var(--bgHover-color-inSubody);
+    vertical-align: middle;
+    box-shadow: -2px 3px 12px var(--second-color);
 }

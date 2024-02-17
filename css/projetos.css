@@ -7,7 +7,6 @@
     "filtro__projetos"
     "lista__projetos";
     grid-template-rows: 11% 89%;
-    height: 100%;
 }
 #projetos > .bloco{
     padding: 0.5em;
@@ -15,23 +14,11 @@
 #filtro__projetos{
     grid-area: filtro__projetos;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 60%;
     align-items: center;
     margin: 0.3em;
 }
-#lista__projetos{
-    grid-area: lista__projetos;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
-    overflow: auto;
-    height: 360px;
-    cursor: grab;
-}
-
-/* TODO: Mudar orientação da lista e seguir com os itens em cards verticais ao invés de horizontais */
 
 .filtro__item{
     font-size: 18px;
@@ -44,28 +31,62 @@
 .selecionado{
     background-color: #1d5f2bae;
 }
+
+#lista__projetos{
+    grid-area: lista__projetos;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    overflow: auto;
+    height: 380px;
+    scrollbar-color: #000;
+}
+
 .lista__projetos--item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 0.5em;
-    height: 320px;
+    height: 330px;
     background-color: var(--bg-color-inSubody);
     color: #fff;
     transition: 0.4s;
 }
+
+/* Ditando regras do scrollbar dentro desse bloco */
+#lista__projetos::-webkit-scrollbar{
+    width: 1em;
+    height: 1em;
+}
+#lista__projetos::-webkit-scrollbar-track{
+    background: var(--bg-color-inSubody);
+    border-radius: 2em;
+    transition: 0.4s;
+}
+#lista__projetos::-webkit-scrollbar-thumb{
+    background-color: var(--bgHover-color-inSubody);
+    border-radius: 2em;
+}
+#lista__projetos::-webkit-scrollbar-thumb:hover{
+    background-color: rgba( 23, 0, 20, 1);
+}
+.lista__item--titulo{
+    margin: 0.2em;
+    font-weight: bolder;
+}
 .lista__projetos--item > span{
-    margin-inline-start: 0.5em;
-    font-size: 18px ;
+    font-size: 18px;
+    text-align: center;
+    margin: 0.2em;
 }
 .lista__item--titulo{
     text-align: center;
 }
 .lista__projetos--item > img{
     border-radius: 10px;
-    width: 240px;
-    height: 150px;
+    width: 300px;
 }
 .lista__projetos--item:hover,.filtro__item:hover{
     color: #fff;

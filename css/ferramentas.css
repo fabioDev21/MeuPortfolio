@@ -1,3 +1,30 @@
 #ferramentas{
     grid-area: ferramentas;
 }
+.ferramentas__itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    height: 65%;
+    overflow: auto;
+}
+.ferramentas__itens > span{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.ferramentas__itens > span > img{
+    width: 60px;
+    transition: 0.4s;
+}
+.ferramentas__itens > span > svg{
+    width: 60px;
+    transition: 0.4s;
+}
+.ferramentas__itens > span > svg > g{
+    fill: #fff;
+} 
+.ferramentas__itens > span > img:hover{
+    transform: scale(1.1,1.1);
+}
