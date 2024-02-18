@@ -1,4 +1,5 @@
 body{
+    position: relative;
     display: grid;
     grid-template-areas: 
     "suBody"
@@ -8,6 +9,11 @@ body{
     padding-top: 3em;
     background-color: var(--third-color);
 }
+
+/* body > footer, #suBody{
+    filter: saturate(0);
+    filter: blur(0.15em);
+} */
 #suBody{
     grid-area: suBody;
     display: grid;
@@ -16,11 +22,13 @@ body{
     "sobre"
     "projetos"
     "ferramentas";
-    grid-template-rows: 4% 24% 46% auto;
+    grid-template-rows: auto auto auto auto;
     gap: 1.3em;
     justify-content: center;
+    align-items: center;
     border-radius: 50px;
     padding: 1.5em 0.5em;
+    height: 100%;
     background-color: var(--second-color);
     color: var(--prime-color);
 }

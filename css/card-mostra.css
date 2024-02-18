@@ -1,0 +1,17 @@
+#cardsSobTela{
+    position: absolute;
+    margin-inline: auto;
+    filter: drop-shadow(0 0 3em #000);
+    height: 40%;
+    width: 90%;
+    left: 5%;
+    bottom: 50%;
+}
+
+/* TODO: card com infos  */
+
+.card-mostra{
+    background-color: aliceblue;
+    height: 100%;
+    border-radius: 1em;
+}

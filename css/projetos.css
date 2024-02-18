@@ -31,7 +31,6 @@
 .selecionado{
     background-color: #1d5f2bae;
 }
-
 #lista__projetos{
     grid-area: lista__projetos;
     display: flex;
@@ -87,6 +86,8 @@
 .lista__projetos--item > img{
     border-radius: 10px;
     width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 .lista__projetos--item:hover,.filtro__item:hover{
     color: #fff;
