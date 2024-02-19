@@ -1,0 +1,122 @@
+.cardsSobTela{
+    position: absolute;
+    left: 5%;
+    bottom: 70%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9em;
+    padding: 1em;
+    border-radius: 1em;
+    width: 90%;
+    height: 20%;
+    background-color: #f0f8ff;
+    filter: drop-shadow(0 10px 1em #000);
+}
+#cardNav > .cardsSobTela__title, #cardIdioma > .cardsSobTela__title{
+    font-size: 22px;
+    color: var(--second-color);
+}
+#cardNav > span,#cardIdioma > a, #cardIdioma > span,#cardSobreMim > span .cardsSobTela > a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d11175b;
+    color: var(--third-color);
+    padding: 0.3em;
+    border-radius: 5px;
+    width: 85%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cardsSobTela > a{
+    justify-content: center;
+    width: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--second-color);
+}
+.cardsSobTela > span > .cardsSobTela__desc{
+    font-size: 20px;
+    margin-inline-end: 10px;
+}
+.cardsSobTela > span:hover, .cardsSobTela > a:hover{
+    color: #f0f8ff;
+    background-color: rgba(24, 27, 32, 0.808);
+}
+.cardsSobTela > span > img{
+    width: 120px;
+    border-radius: 5px;
+}
+.closeBtn > p{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 26px;
+    background-color: transparent;
+    padding: 0.1em;
+    border: solid 2px var(--second-color);
+    border-radius: 15px;
+    color: var(--second-color);
+    transition: 0.4s;
+}
+.closeBtn > p:hover{
+    background-color: var(--second-color);
+    color: #f0f8ff;
+}
+#cardSobreMim{
+    height: 35%;
+    bottom: 60%;
+    background-color: var(--third-color);
+}
+#cardSobreMim > .cardsSobTela__title{
+    color: var(--prime-color);
+    font-size: 30px;
+}
+#cardSobreMim > span{
+    background-color: transparent;
+    vertical-align: middle;
+    width: 100%;
+    color: var(--prime-color);
+    cursor: default;
+}
+#cardSobreMim > span > img{
+    margin: auto;
+    width: 200px;
+}
+#cardProjetoUm,#cardProjetoDois, #cardProjetoTres{
+    display: flex;
+    align-content: center;
+    height: 40%;
+    bottom: 40%;
+    background-color: var(--third-color);
+}
+.links__projetos > a{
+    color: #f0f8ff;
+    background-color: var(--second-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.links__projetos > a:hover{
+    background-color: var(--prime-color);
+    color: var(--second-color);
+}
+#cardProjetoUm > .cardsSobTela__title, #cardProjetoDois > .cardsSobTela__title, #cardProjetoTres > .cardsSobTela__title{
+    font-size: 30px;
+    color: var(--prime-color);
+}
+#cardProjetoUm > span > p, #cardProjetoDois > span > p, #cardProjetoTres > span > p{
+    text-align: center;
+}
+#cardProjetoUm > span, #cardProjetoDois > span, #cardProjetoTres > span{
+    color: var(--prime-color);
+    background-color: transparent;
+}
+#cardProjetoUm > span > img,#cardProjetoDois > span > img, #cardProjetoTres > span > img{
+    width: 300px;
+    margin: auto;
+}

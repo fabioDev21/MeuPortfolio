@@ -22,7 +22,7 @@ body{
     "sobre"
     "projetos"
     "ferramentas";
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 5% auto auto auto auto;
     gap: 1.3em;
     justify-content: center;
     align-items: center;

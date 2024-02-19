@@ -21,14 +21,22 @@
     cursor: default;
     color: var(--second-color);
 }
-#sobre > .bloco > p > a{
-    filter: drop-shadow(0 0 0.20rem var(--bgHover-color-inSubody));
-    color: var(--second-color);
-}
 #foto-perfil{
     border-radius: 20px;
     transition: 0.4s;
     vertical-align: middle;
 }
-
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--second-color);
+    filter: drop-shadow(0 0 0.20rem var(--bgHover-color-inSubody));
+    transition: 0.4s;
+}
+button:active, button:hover{
+    filter: drop-shadow(0 0 1em var(--second-color));
+}
 /* TODO: adicionar botão "ver mais" com js e fazer a imagem sumir e aparecer o bloco do texto */

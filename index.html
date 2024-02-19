@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/sobre-mim.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <link rel="stylesheet" href="css/ferramentas.css">
-    <link rel="stylesheet" href="css/card-mostra.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/suBody/principal.css">
+    <link rel="stylesheet" href="css/suBody/nav.css">
+    <link rel="stylesheet" href="css/suBody/sobre-mim.css">
+    <link rel="stylesheet" href="css/suBody/projetos.css">
+    <link rel="stylesheet" href="css/suBody/ferramentas.css">
+    <link rel="stylesheet" href="css/suBody/card-mostra.css">
+    <script src="js/navMenu.js" defer></script>
+    <script src="js/sobreMim.js" defer></script>
+    <script src="js/projetos.js" defer></script>
     <title>Portfolio Fabio da Silva</title>
 </head>
 <body>
     <div id="suBody" >
         <nav id="navegacao">
-            <span title="Idioma">
+            <span id="languageIcon" title="Mudar idioma">
                 <a href="#" class="link-text navegacao__item">
                     <p class="fa fa-globe fa-lg"></p>
                 </a>
             </span>
-            <!-- TODO: Adicionar preview do menu, idioma e tema a partir do hover do usuário -->
-            <span title="Menu"> 
+            <span id="menuIcon" title="Ver menu"> 
                 <a href="#" class="link-text navegacao__item--menu">
                     <p class="fa fa-bars fa-lg"></p>
                 </a>
             </span>
-            <span title="Modo claro">
+            <span id="sunMode" title="Ativar modo claro">
                 <a href="" class="link-text navegacao__item">
                     <p class="fa fa-sun-o fa-lg"></p>
                 </a>
@@ -40,8 +41,7 @@
                 <a class="link-text" href="https://www.linkedin.com/in/fabiodasilvaramalho/" target="_blank">
                     <img id="foto-perfil" src="https://media.licdn.com/dms/image/D4D03AQHv1psCsqrJeQ/profile-displayphoto-shrink_200_200/0/1697245450846?e=2147483647&v=beta&t=fpA9hbVnMYFwm5yF6X0LxomjxdMaa8w-dC1mN9x6cdk" alt="foto">
                 </a>
-                <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desen... <a href="#">Ler mais</a></p> 
-                <!-- <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desenvolvimento de sistemas e me especializando em frontend com outros cursos </p> -->
+                <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desen...<button id="verMaisBtn">Ver mais</button></p>
             </div>
         </section>
         <section id="projetos" >
@@ -100,23 +100,167 @@
             <h3 class="titulo">Ferramentas que utilizo</h3>
             <div class="bloco ferramentas__itens">
                 <span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="logo-html5">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="logo-css3">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="logo-javascript">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="logo-git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="logo-html5" title="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="logo-css3" title="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="logo-javascript" title="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="logo-git" title="Git">
                     <!-- TODO: adicionar svgs ao invés de imgs // devicon -->
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="logo do github">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="logo do github" title="Github">
                 </span>
             </div>
         </section>
-    </div>
-    <!-- TODO: Card para mostrar infos, ele vai ser funcionar assim que eu add o js script pra isso -->
-    <!-- <div id="cardsSobTela">
-        <div class="card-mostra">
-            asdasd
+        <!-- TODO: Como congelo elementos ao abrir os menus? -->
+        <!-- TODO: Como trocar os modos para light mode?  -->
+        <!-- TODO: Quando abro um div tenho que fechar o menu, quando o usuário estiver nesse menu e clicar fora dele ele é fechado! addeventlistener no suBody  -->
+        <!-- TODO: Mais conteúdo para o site  -->
+        <!-- TODO: quando sumir o menu nav, criar um botão que o leve para o topo denovo  -->
+        <!-- Idioma -->
+        <div id="cardIdioma" class="cardsSobTela">
+            <h4 class="cardsSobTela__title"> Idiomas </h4>
+            <div class="closeBtn">
+                <p class="fa fa-times fa-lg"></p>
+            </div>
+            <span>
+                <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/2-bandeira-do-brasil.jpg" alt="Bandeira do Brasil indicando um idioma disponível para o conteúdo da página">
+                <p class="cardsSobTela__desc"> Português do Brasil</p>
+            </span>
+            <span>
+                <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg" alt="Bandeira dos Estados Unidos indicando um idioma disponível para o conteúdo da página">
+                <p class="cardsSobTela__desc"> English of USA </p>
+            </span>
+            <script>
+                let closeBtnIdioma = document.getElementsByClassName("closeBtn")[0]
+                closeBtnIdioma.addEventListener("click", escondeMenuIdioma)
+                function escondeMenuIdioma(){
+                cardsSobTela[0].style.display = "none"
+                }
+            </script>
         </div>
-    </div> -->
-    <footer>
+        <!-- Navegação -->
+        <div id="cardNav" class="cardsSobTela">
+            <h4 class="cardsSobTela__title"> Tópicos </h4>
+            <div class="closeBtn">
+                <p class="fa fa-times fa-lg"></p>
+            </div>
+            <a href="#sobre" onclick="escondeMenuNav()">
+                <span>
+                    <p class="cardsSobTela__desc">Sobre mim</p>
+                </span>
+            </a>
+            <a href="#projetos" onclick="escondeMenuNav()">
+                <span>
+                    <p class="cardsSobTela__desc">Projetos</p>
+                </span>
+            </a>
+            <a href="#ferramentas" onclick="escondeMenuNav()">
+                <span>
+                    <p class="cardsSobTela__desc">Ferramentas</p>
+                </span>
+            </a>
+            <a href="#contatos" onclick="escondeMenuNav()">
+                <span>
+                    <p class="cardsSobTela__desc">Contatos</p>
+                </span>
+            </a>
+            <script>
+                let closeBtnNav = document.getElementsByClassName("closeBtn")[1]
+                closeBtnNav.addEventListener("click", escondeMenuNav)
+                function escondeMenuNav(){
+                    cardsSobTela[1].style.display = "none"
+                }
+            </script>
+        </div>
+        <!-- Sobre mim -->
+        <div id="cardSobreMim" class="cardsSobTela">
+            <h4 class="cardsSobTela__title"> Sobre mim </h4>
+        <div class="closeBtn">
+            <p class="fa fa-times fa-lg"></p>
+        </div>
+        <span>
+            <img src="https://media.licdn.com/dms/image/D4D03AQHv1psCsqrJeQ/profile-displayphoto-shrink_200_200/0/1697245450846?e=2147483647&v=beta&t=fpA9hbVnMYFwm5yF6X0LxomjxdMaa8w-dC1mN9x6cdk" alt="Foto de perfil do Linkedin de Fábio da Silva">
+        </span>
+        <span>
+            <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desenvolvimento de sistemas</p>
+        </span>
+        <script>
+            let closeBtnSobre = document.getElementsByClassName("closeBtn")[2]
+            closeBtnSobre.addEventListener("click", escondeMenuSobre)
+            function escondeMenuSobre(){
+            cardsSobTela[2].style.display = "none"
+            }
+        </script>
+        </div>
+        <div id="cardProjetoUm" class="cardsSobTela">
+            <div class="closeBtn">
+                <p class="fa fa-times fa-lg"></p>
+            </div>
+            <span>
+                <img src="assets/projetos/spotifyImersao.png" alt="Foto de perfil do Linkedin de Fábio da Silva">
+            </span>
+            <h4 class="cardsSobTela__title"> Clone Spotify </h4>
+        <span>
+            <p>Proposta realizada durante a Imersão Frontend da Alura, est...</p>
+        </span>
+        <div class="links__projetos">
+            <a href="#">Acessar Projeto</a>
+            <a href="https://github.com/fabioDev21/ImersaoFrontendAlura.git" target="_blank">Ver Repositório</a>
+        </div>
+        <script>
+            let closeBtnProjetoUm = document.getElementsByClassName("closeBtn")[3]
+            closeBtnProjetoUm.addEventListener("click", escondeMenuProjetoUm)
+            function escondeMenuProjetoUm(){
+            cardsSobTela[3].style.display = "none"
+            }
+        </script>
+        </div>
+        <div id="cardProjetoDois" class="cardsSobTela">
+            <div class="closeBtn">
+                <p class="fa fa-times fa-lg"></p>
+            </div>
+            <span>
+                <img src="assets/projetos/receitarcozinhar.png" alt="Foto de perfil do Linkedin de Fábio da Silva">
+            </span>
+            <h4 class="cardsSobTela__title"> Receitar e Cozinhar </h4>
+            <span>
+                <p>Desafio de projeto realizado durante o curso de Anális...</p>
+            </span>
+            <div class="links__projetos">
+                <a href="#">Acessar Projeto</a>
+                <a href="#">Ver Repositório</a>
+            </div>
+        <script>
+            let closeBtnProjetoDois = document.getElementsByClassName("closeBtn")[4]
+            closeBtnProjetoDois.addEventListener("click", escondeMenuProjetoDois)
+            function escondeMenuProjetoDois(){
+            cardsSobTela[4].style.display = "none"
+            }
+        </script>
+        </div>
+        <div id="cardProjetoTres" class="cardsSobTela">
+            <div class="closeBtn">
+                <p class="fa fa-times fa-lg"></p>
+            </div>
+            <span>
+                <img src="assets/projetos/calculadora.png" alt="Foto de perfil do Linkedin de Fábio da Silva">
+            </span>
+                <h4 class="cardsSobTela__title"> Calculadora funcional </h4>
+            <span>
+                <p>Desenvolvido a partir de uma landing page produzi...</p>
+            </span>
+            <div class="links__projetos">
+                <a href="#">Acessar Projeto</a>
+                <a href="#">Ver Repositório</a>
+            </div>
+        <script>
+            let closeBtnProjetoTres = document.getElementsByClassName("closeBtn")[5]
+            closeBtnProjetoTres.addEventListener("click", escondeMenuProjetoTres)
+            function escondeMenuProjetoTres(){
+            cardsSobTela[5].style.display = "none"
+            }
+        </script>
+        </div>
+    </div>
+    <footer id="contatos">
         <h4 id="footer__titulo">Entre em contato comigo!</h4>
         <span>
             <a class="link-text" href="https://www.linkedin.com/in/fabiodasilvaramalho/" target="_blank">

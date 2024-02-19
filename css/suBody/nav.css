@@ -7,13 +7,13 @@
     border-radius: 30px;
     padding: 0.3em;
     width: 50%;
-    height: 40px;
+    height: 100%;
     background-color: var(--prime-color);
 }
 .navegacao__item, .navegacao__item--menu{
     color: var(--second-color);
     padding: 0.22em;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 35px;
     transition: 0.4s;
 }
@@ -21,6 +21,6 @@
     border-radius: 10px;
 }
 .navegacao__item:active, .navegacao__item:hover, .navegacao__item--menu:hover{
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: #fff;
 }
