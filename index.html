@@ -17,6 +17,7 @@
     <title>Portfolio Fabio da Silva</title>
 </head>
 <body>
+    <div id="escureceTela"></div>
     <div id="suBody" >
         <nav id="navegacao">
             <span id="languageIcon" title="Mudar idioma">
@@ -47,19 +48,8 @@
         <section id="projetos" >
             <h2 class="titulo"> Estes são meus projetos! </h2>
             <div id="lista" class="bloco">
-                <span id="filtro__projetos">
-                    <a href="#" class="link-text filtro__item selecionado">
-                        <p> Todos </p>
-                    </a>
-                    <a href="#" class="link-text filtro__item">
-                        <p> Frontend </p>
-                    </a>
-                    <a href="#" class="link-text filtro__item">
-                        <p> API </p>
-                    </a>
-                </span>
                 <span id="lista__projetos">
-                    <a href="#" class="link-text">
+                    <a href="#cardProjetoUm" class="link-text itemProjeto">
                         <div class="lista__projetos--item">
                             <img src="assets/projetos/spotifyImersao.png" alt="Projeto onde é apresentado um site de notícias">
                             <span>
@@ -70,7 +60,7 @@
                             </span>
                         </div>
                     </a>
-                    <a href="#" class="link-text">
+                    <a href="#cardProjetoDois" class="link-text itemProjeto">
                         <div class="lista__projetos--item">
                             <img src="assets/projetos/receitarcozinhar.png" alt="Projeto onde é apresentado um site de notícias">
                             <span>
@@ -81,7 +71,7 @@
                             </span>
                         </div>
                     </a>
-                    <a href="#" class="link-text">
+                    <a href="#cardProjetoTres" class="link-text itemProjeto">
                         <div class="lista__projetos--item">
                             <img src="assets/projetos/calculadora.png" alt="projeto calculadora">
                             <span>
@@ -109,11 +99,9 @@
                 </span>
             </div>
         </section>
-        <!-- TODO: Como congelo elementos ao abrir os menus? -->
         <!-- TODO: Como trocar os modos para light mode?  -->
-        <!-- TODO: Quando abro um div tenho que fechar o menu, quando o usuário estiver nesse menu e clicar fora dele ele é fechado! addeventlistener no suBody  -->
-        <!-- TODO: Mais conteúdo para o site  -->
         <!-- TODO: quando sumir o menu nav, criar um botão que o leve para o topo denovo  -->
+        <!-- TODO: Aumentar card sobre mim  -->
         <!-- Idioma -->
         <div id="cardIdioma" class="cardsSobTela">
             <h4 class="cardsSobTela__title"> Idiomas </h4>
@@ -132,7 +120,8 @@
                 let closeBtnIdioma = document.getElementsByClassName("closeBtn")[0]
                 closeBtnIdioma.addEventListener("click", escondeMenuIdioma)
                 function escondeMenuIdioma(){
-                cardsSobTela[0].style.display = "none"
+                    cardsSobTela[0].style.display = "none"
+                    escureceTela.style.display = "none"
                 }
             </script>
         </div>
@@ -167,6 +156,7 @@
                 closeBtnNav.addEventListener("click", escondeMenuNav)
                 function escondeMenuNav(){
                     cardsSobTela[1].style.display = "none"
+                    escureceTela.style.display = "none"
                 }
             </script>
         </div>
@@ -179,14 +169,15 @@
         <span>
             <img src="https://media.licdn.com/dms/image/D4D03AQHv1psCsqrJeQ/profile-displayphoto-shrink_200_200/0/1697245450846?e=2147483647&v=beta&t=fpA9hbVnMYFwm5yF6X0LxomjxdMaa8w-dC1mN9x6cdk" alt="Foto de perfil do Linkedin de Fábio da Silva">
         </span>
-        <span>
-            <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desenvolvimento de sistemas</p>
+        <span class="cardsSobTela__desc">
+            <p>Olá, me chamo Fábio, tenho 19 anos e gosto muito de resolver problemas de tecnologia. Estou cursando análise e desenvolvimento de sistemas e estudando, a partir de cursos online, na área de frontend</p>
         </span>
         <script>
             let closeBtnSobre = document.getElementsByClassName("closeBtn")[2]
             closeBtnSobre.addEventListener("click", escondeMenuSobre)
             function escondeMenuSobre(){
             cardsSobTela[2].style.display = "none"
+            escureceTela.style.display = "none"
             }
         </script>
         </div>
@@ -210,6 +201,7 @@
             closeBtnProjetoUm.addEventListener("click", escondeMenuProjetoUm)
             function escondeMenuProjetoUm(){
             cardsSobTela[3].style.display = "none"
+            escureceTela.style.display = "none"
             }
         </script>
         </div>
@@ -233,6 +225,7 @@
             closeBtnProjetoDois.addEventListener("click", escondeMenuProjetoDois)
             function escondeMenuProjetoDois(){
             cardsSobTela[4].style.display = "none"
+            escureceTela.style.display = "none"
             }
         </script>
         </div>
@@ -256,6 +249,7 @@
             closeBtnProjetoTres.addEventListener("click", escondeMenuProjetoTres)
             function escondeMenuProjetoTres(){
             cardsSobTela[5].style.display = "none"
+            escureceTela.style.display = "none"
             }
         </script>
         </div>

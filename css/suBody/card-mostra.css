@@ -9,15 +9,18 @@
     padding: 1em;
     border-radius: 1em;
     width: 90%;
-    height: 20%;
+    height: 25%;
     background-color: #f0f8ff;
     filter: drop-shadow(0 10px 1em #000);
+}
+#cardSobreMim > .cardsSobTela__desc{
+    height: 40%;
 }
 #cardNav > .cardsSobTela__title, #cardIdioma > .cardsSobTela__title{
     font-size: 22px;
     color: var(--second-color);
 }
-#cardNav > span,#cardIdioma > a, #cardIdioma > span,#cardSobreMim > span .cardsSobTela > a{
+#cardNav > span,#cardIdioma > a, #cardIdioma > span,#cardSobreMim > span, .cardsSobTela > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +49,7 @@
 }
 .cardsSobTela > span > img{
     width: 120px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .closeBtn > p{
     position: absolute;
@@ -86,7 +89,7 @@
     width: 200px;
 }
 #cardProjetoUm,#cardProjetoDois, #cardProjetoTres{
-    display: flex;
+    display: none;
     align-content: center;
     height: 40%;
     bottom: 40%;

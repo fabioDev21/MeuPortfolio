@@ -55,4 +55,5 @@ verMaisBtn.addEventListener("click", abrirCardSobre)
 function abrirCardSobre(){
     let cardSobre = document.getElementsByClassName("cardsSobTela")[2]
     cardSobre.style.display = "flex"
+    escureceTela.style.display = "block"
 } 

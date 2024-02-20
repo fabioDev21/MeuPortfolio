@@ -7,13 +7,8 @@ body{
     grid-template-rows: 95% 5%;
     gap: 1em;
     padding-top: 3em;
-    background-color: var(--third-color);
+    background: fixed linear-gradient(135deg , #191c23, #65758f);
 }
-
-/* body > footer, #suBody{
-    filter: saturate(0);
-    filter: blur(0.15em);
-} */
 #suBody{
     grid-area: suBody;
     display: grid;
@@ -31,6 +26,14 @@ body{
     height: 100%;
     background-color: var(--second-color);
     color: var(--prime-color);
+}
+#escureceTela{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 70%;
 }
 footer{
     grid-area: footer;

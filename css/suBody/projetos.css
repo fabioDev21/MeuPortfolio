@@ -4,32 +4,11 @@
 #projetos > #lista{
     display: grid;
     grid-template-areas: 
-    "filtro__projetos"
     "lista__projetos";
-    grid-template-rows: 11% 89%;
+    grid-template-rows: auto;
 }
 #projetos > .bloco{
     padding: 0.5em;
-}
-#filtro__projetos{
-    grid-area: filtro__projetos;
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    align-items: center;
-    margin: 0.3em;
-}
-
-.filtro__item{
-    font-size: 18px;
-    background-color: var(--bg-color-inSubody);
-    color: #fff;
-    transition: 0.4s;
-    padding: 0.5em;
-    border-radius: 5px;
-}
-.selecionado{
-    background-color: #1d5f2bae;
 }
 #lista__projetos{
     grid-area: lista__projetos;
@@ -41,19 +20,16 @@
     height: 380px;
     scrollbar-color: #000;
 }
-
 .lista__projetos--item{
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
     padding: 0.5em;
-    height: 330px;
     background-color: var(--bg-color-inSubody);
     color: #fff;
     transition: 0.4s;
 }
-
 /* Ditando regras do scrollbar dentro desse bloco */
 #lista__projetos::-webkit-scrollbar{
     width: 1em;
