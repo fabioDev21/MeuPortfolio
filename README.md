@@ -34,3 +34,13 @@ Imagens dele até o momento:
 ![image](https://github.com/fabioDev21/MeuPortfolio/assets/111830665/9da926df-99c1-443a-af3a-c814caa1df75)
 
 -- 18/02 --
+
+-- 19/02 --
+
+![image](https://github.com/fabioDev21/MeuPortfolio/assets/111830665/619a6658-7674-4492-93f9-5a451b91076e)
+
+![image](https://github.com/fabioDev21/MeuPortfolio/assets/111830665/6b30ca84-b7ac-4443-b2b6-ce4969d97bd6)
+
+![image](https://github.com/fabioDev21/MeuPortfolio/assets/111830665/00b4b8d7-11f3-453a-8252-ad61345456e4)
+
+-- 19/02 --
