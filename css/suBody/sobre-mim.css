@@ -39,4 +39,3 @@ button{
 button:active, button:hover{
     filter: drop-shadow(0 0 1em var(--second-color));
 }
-/* TODO: adicionar botão "ver mais" com js e fazer a imagem sumir e aparecer o bloco do texto */
