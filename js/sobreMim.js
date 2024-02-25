@@ -9,31 +9,31 @@ function rotateBlocoSobre(){
     if(numberTochose >= 1 && numberTochose <= 10){
         switch (numberTochose){
             case 1:
-                document.getElementById("foto-perfil").style.rotate = "15deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #00A6FB)"
                 break;
             case 2:
-                document.getElementById("foto-perfil").style.rotate = "-15deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #0582CA)"
                 break;
             case 3:
-                document.getElementById("foto-perfil").style.rotate = "20deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #AAD2BA)"
                 break;
             case 4:
-                document.getElementById("foto-perfil").style.rotate = "-20deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #D9FFF5)"
                 break;
             case 5:
-                document.getElementById("foto-perfil").style.rotate = "25deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #1B263B)"
                 break;
             case 6:
-                document.getElementById("foto-perfil").style.rotate = "-25deg"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #587B7F)"
                 break;
             case 7:
-                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em crimson)"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #61C9A8)"
                 break;
             case 8:
-                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em purple)"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #758BFD)"
                 break;
             case 9:
-                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #f0f8ff)"
+                document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #F4F1BB)"
                 break;
             case 10:
                 document.getElementById("foto-perfil").style.filter = "drop-shadow(0 0 0.75em #FFD700)"

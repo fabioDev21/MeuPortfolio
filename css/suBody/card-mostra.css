@@ -57,7 +57,6 @@
     right: 5px;
     cursor: pointer;
     font-size: 26px;
-    background-color: transparent;
     padding: 0.1em;
     border: solid 2px var(--second-color);
     border-radius: 15px;
@@ -69,8 +68,8 @@
     color: #f0f8ff;
 }
 #cardSobreMim{
-    height: 35%;
-    bottom: 60%;
+    height: 40%;
+    bottom: 50%;
     background-color: var(--third-color);
 }
 #cardSobreMim > .cardsSobTela__title{
@@ -91,7 +90,6 @@
 #cardProjetoUm,#cardProjetoDois, #cardProjetoTres{
     display: none;
     align-content: center;
-    height: 40%;
     bottom: 40%;
     background-color: var(--third-color);
 }
@@ -122,4 +120,15 @@
 #cardProjetoUm > span > img,#cardProjetoDois > span > img, #cardProjetoTres > span > img{
     width: 300px;
     margin: auto;
+}
+.card__tecnos{
+    margin: 1em;
+}
+.card__tecnos > p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card__tecnos > span{
+    display: flex;
+    justify-content: space-around;
 }

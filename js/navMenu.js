@@ -12,7 +12,6 @@ function mostraMenuIdioma(){
 }
 
 // Definição das funções para o menu de navegação mobile
-
 let menuIcon = document.getElementById("menuIcon")
 
 menuIcon.addEventListener("click", mostraMenuNav)
@@ -22,9 +21,6 @@ function mostraMenuNav(){
     cardsSobTela[1].style.display = "flex"
 }
 
-navegacao.addEventListener("", a => console.log("slc"))
-
 // Definição do light mode da página
-
 let sunMode = document.getElementById("sunMode")
 

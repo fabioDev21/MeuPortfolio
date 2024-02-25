@@ -49,9 +49,9 @@
             <h2 class="titulo"> Estes são meus projetos! </h2>
             <div id="lista" class="bloco">
                 <span id="lista__projetos">
-                    <a href="#cardProjetoUm" class="link-text itemProjeto">
+                    <a id="projetoUm" href="#cardProjetoUm"  class="link-text">
                         <div class="lista__projetos--item">
-                            <img src="assets/projetos/spotifyImersao.png" alt="Projeto onde é apresentado um site de notícias">
+                            <img src="assets/projetos/spotifyImersao.png" alt="Projeto de Spotify">
                             <span>
                                 <div>
                                     <h3 class="lista__item--titulo"> Clone Spotify </h3>
@@ -60,24 +60,24 @@
                             </span>
                         </div>
                     </a>
-                    <a href="#cardProjetoDois" class="link-text itemProjeto">
+                    <a id="projetoDois" href="#cardProjetoDois" class="link-text">
                         <div class="lista__projetos--item">
                             <img src="assets/projetos/receitarcozinhar.png" alt="Projeto onde é apresentado um site de notícias">
                             <span>
                                 <div>
                                     <h3 class="lista__item--titulo"> Site de receitas </h3>
-                                    <p>Desafio de projeto realizado durante o curso de Anális...</p>
+                                    <p>Projeto de faculdade desenvolvido durante o...</p>
                                 </div>
                             </span>
                         </div>
                     </a>
-                    <a href="#cardProjetoTres" class="link-text itemProjeto">
+                    <a id="projetoTres" href="#cardProjetoTres" class="link-text">
                         <div class="lista__projetos--item">
                             <img src="assets/projetos/projeto7daysofcode.jpeg" alt="projeto calculadora">
                             <span>
                                 <div>
                                     <h3 class="lista__item--titulo"> Landing page </h3>
-                                    <p> Desenvolvido a partir de desafi...</p>
+                                    <p> Landing page desenvolvida para um desafio de 7 di...</p>
                                 </div>
                             </span>
                         </div>
@@ -94,7 +94,6 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="logo-css3" title="CSS3">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="logo-javascript" title="JavaScript">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="logo-git" title="Git">
-                    <!-- TODO: adicionar svgs ao invés de imgs // devicon -->
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="logo do github" title="Github">
                 </span>
             </div>
@@ -120,6 +119,10 @@
                     cardsSobTela[0].style.display = "none"
                     escureceTela.style.display = "none"
                 }
+                escureceTela.addEventListener("click", a => {
+                cardsSobTela[0].style.display = "none"
+                escureceTela.style.display = "none"
+                })
             </script>
         </div>
         <!-- Navegação -->
@@ -155,6 +158,11 @@
                     cardsSobTela[1].style.display = "none"
                     escureceTela.style.display = "none"
                 }
+                
+                escureceTela.addEventListener("click", a => {
+                cardsSobTela[1].style.display = "none"
+                escureceTela.style.display = "none"
+                })
             </script>
         </div>
         <!-- Sobre mim -->
@@ -176,81 +184,17 @@
             cardsSobTela[2].style.display = "none"
             escureceTela.style.display = "none"
             }
-        </script>
-        </div>
-        <div id="cardProjetoUm" class="cardsSobTela">
-            <div class="closeBtn">
-                <p class="fa fa-times fa-lg"></p>
-            </div>
-            <span>
-                <img src="assets/projetos/spotifyImersao.png" alt="Projeto spotify">
-            </span>
-            <h4 class="cardsSobTela__title"> Clone Spotify </h4>
-        <span>
-            <p>Proposta realizada durante a Imersão Frontend da Alura, est...</p>
-        </span>
-        <div class="links__projetos">
-            <a href="https://projetoimersaofrontendalura.vercel.app/" target="_blank">Acessar Projeto</a>
-            <a href="https://github.com/fabioDev21/ImersaoFrontendAlura.git" target="_blank">Ver Repositório</a>
-        </div>
-        <script>
-            let closeBtnProjetoUm = document.getElementsByClassName("closeBtn")[3]
-            closeBtnProjetoUm.addEventListener("click", escondeMenuProjetoUm)
-            function escondeMenuProjetoUm(){
-            cardsSobTela[3].style.display = "none"
+            escureceTela.addEventListener("click", a => {
+            cardsSobTela[2].style.display = "none"
             escureceTela.style.display = "none"
-            }
+            })
         </script>
         </div>
-        <div id="cardProjetoDois" class="cardsSobTela">
-            <div class="closeBtn">
-                <p class="fa fa-times fa-lg"></p>
-            </div>
-            <span>
-                <img src="assets/projetos/receitarcozinhar.png" alt="Projeto site de receitas">
-            </span>
-            <h4 class="cardsSobTela__title"> Receitar e Cozinhar </h4>
-            <span>
-                <p>Projeto de faculdade feito no 1º semestre de Análise e desenvolvimento de sistemas, onde utilizei as habilidades aprendidas em HTML5 e CSS3 para montar o esqueleto das 4 páginas em que ele consiste e poder estiliza-las foi desafiador. Um dos meus primeiros projetos e gostei muito da experiência pois, houveram problemas que me pediram certo tempo de pesquisa mas no final ficou do jeito que esperava.</p>
-            </span>
-            <div class="links__projetos">
-                <a href="https://projeto-faculdade-receitar-cozinhar.vercel.app/
-                " target="_blank">Acessar Projeto</a>
-                <a href="https://github.com/fabioDev21/Site-Receitas/" target="_blank">Ver Repositório</a>
-            </div>
-        <script>
-            let closeBtnProjetoDois = document.getElementsByClassName("closeBtn")[4]
-            closeBtnProjetoDois.addEventListener("click", escondeMenuProjetoDois)
-            function escondeMenuProjetoDois(){
-            cardsSobTela[4].style.display = "none"
-            escureceTela.style.display = "none"
-            }
-        </script>
+        <div id="cardProjetoUm" class="cardsSobTela" style="height: 52%;">
         </div>
-        <div id="cardProjetoTres" class="cardsSobTela">
-            <div class="closeBtn">
-                <p class="fa fa-times fa-lg"></p>
-            </div>
-            <span>
-                <img src="assets/projetos/projeto7daysofcode.jpeg" alt="Projeto landing page 7 days of code">
-            </span>
-                <h4 class="cardsSobTela__title"> Landing page </h4>
-            <span>
-                <p>Projeto de landing page desenvolvida durante 7 dias assim como o desafio propôs, aqui surgiram desafios onde o conteúdo disponibilizado para ajuda me fez plantar sementes e colher frutos muito rápido, foi nele que aprendi o display grid, responsividade, váriaves no CSS, dentre muitas outras coisas, para mim sem dúvidas um ótimo projeto. Segue abaixo imagens do mesmo já concluído.</p>
-            </span>
-            <div class="links__projetos">
-                <a href="https://desafio-seven-days-of-code.vercel.app" target="_blank">Acessar Projeto</a>
-                <a href="https://github.com/fabioDev21/7DaysOfCodeByGiMoller"
-                target="_blank">Ver Repositório</a>
-            </div>
-        <script>
-            let closeBtnProjetoTres = document.getElementsByClassName("closeBtn")[5]
-            closeBtnProjetoTres.addEventListener("click", escondeMenuProjetoTres)
-            function escondeMenuProjetoTres(){
-            cardsSobTela[5].style.display = "none"
-            escureceTela.style.display = "none"
-            }
-        </script>
+        <div id="cardProjetoDois" class="cardsSobTela" style="height: 55%;">
+        </div>
+        <div id="cardProjetoTres" class="cardsSobTela" style="height: 47%;">
         </div>
     </div>
     <footer id="contatos">
