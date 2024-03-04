@@ -18,7 +18,6 @@
     gap: 1em;
     overflow: auto;
     height: 380px;
-    scrollbar-color: #000;
 }
 .lista__projetos--item{
     display: flex;
