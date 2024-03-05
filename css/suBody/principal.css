@@ -7,7 +7,7 @@ body{
     grid-template-rows: 95% 5%;
     gap: 1em;
     padding-top: 3em;
-    background: fixed linear-gradient(135deg , #191c23, #65758f);
+    background:fixed linear-gradient(120deg , #191c23, #65758f);
 }
 #suBody{
     grid-area: suBody;
