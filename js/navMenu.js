@@ -3,6 +3,7 @@ let languageIcon = document.getElementById("languageIcon")
 let cardsSobTela = document.getElementsByClassName("cardsSobTela")
 let escureceTela = document.getElementById("escureceTela")
 let navegacao = document.getElementById("navegacao")
+let root = document.querySelector(":root")
 
 languageIcon.addEventListener("click", mostraMenuIdioma)
 function mostraMenuIdioma(){
@@ -22,10 +23,7 @@ function mostraMenuNav(){
 }
 
 // Definição do light mode da página
-// TODO: adicionar troca cores do texto = feito!, elementos bloco do projeto, sombras do icones das ferramentas.
-// TODO: pensar se troco ou não a cor do background linear = foi trocado!
 let sunMode = document.getElementById("sunMode")
-console.log(sunMode.title)
 
 sunMode.addEventListener("click", ativarTema)
 
@@ -40,69 +38,19 @@ function ativarTema(){
 }
 
 function temaClaro(){
-    // aplicando cor para cada elemento da classe bloco e cada declaração subsequente dessa forma age da mesma maneira
-    Array.from(document.getElementsByClassName("bloco")).forEach(elemento => {
-        elemento.style.color = "var(--prime-color)"
-        elemento.style.backgroundColor = "var(--second-color)"
-    })
-    Array.from(document.getElementsByClassName("navegacao__item")).forEach(elemento => {
-        elemento.style.color = "var(--prime-color)"
-        // método que adiciona hover após substituição feita pelo próprio JS
-            elemento.addEventListener("mouseenter", a => {
-                elemento.style.color = "var(--second-color)"
-                elemento.style.backgroundColor = "var(--prime-color)"
-            })
-            elemento.addEventListener("mouseleave", a => {
-                elemento.style.color = "var(--prime-color)"
-                elemento.style.backgroundColor = "transparent"
-            })
-    })
-    menuIcon.style.color = "var(--prime-color)"
-    menuIcon.addEventListener("mouseenter", a => {
-        menuIcon.style.color = "var(--second-color)"
-        menuIcon.style.backgroundColor = "var(--prime-color)"
-    })
-    menuIcon.addEventListener("mouseleave", a => {
-        menuIcon.style.color = "var(--prime-color)"
-        menuIcon.style.backgroundColor = "transparent"
-    })
-    navegacao.style.backgroundColor = "var(--second-color)"
-    document.getElementById("verMaisBtn").style.color = "var(--prime-color)"
-    document.getElementById("verMaisBtn").style.filter = "drop-shadow(0 0 0.20rem var(--prime-color))"
-    document.getElementById("suBody").style.backgroundColor = "var(--prime-color)"
-    document.getElementById("suBody").style.color = "var(--second-color)"
+    root.style.setProperty("--prime-color","#0D1117")
+    root.style.setProperty("--second-color", "#e9e3db")
+    root.style.setProperty("--third-color", "#b8c4d5")
+    root.style.setProperty("--bg-color-inSubody", "rgba(161, 194, 255, 0.5)")
+    root.style.setProperty("--bgHover-color-inSubody", "rgba(161, 194, 255, 0.9)")
     document.getElementsByTagName("body")[0].style.background = "fixed linear-gradient(-120deg , #2B3A67,  #ededf4)"
 }
 
 function temaEscuro(){
-    Array.from(document.getElementsByClassName("bloco")).forEach(elemento => {
-        elemento.style.color = "var(--second-color)"
-        elemento.style.backgroundColor = "var(--prime-color)"
-    })
-    
-    Array.from(document.getElementsByClassName("navegacao__item")).forEach(elemento => {
-        elemento.style.color = "var(--second-color)"
-        elemento.addEventListener("mouseenter", a => {
-            elemento.style.color = "var(--prime-color)"
-            elemento.style.backgroundColor = "var(--second-color)"
-        })
-        elemento.addEventListener("mouseleave", a => {
-            elemento.style.color = "var(--second-color)"
-            elemento.style.backgroundColor = "transparent"
-        })
-    })
-    menuIcon.addEventListener("mouseenter", a => {
-        menuIcon.style.color = "var(--prime-color)"
-        menuIcon.style.backgroundColor = "var(--second-color)"
-    })
-    menuIcon.addEventListener("mouseleave", a => {
-        menuIcon.style.color = "var(--second-color)"
-        menuIcon.style.backgroundColor = "transparent"
-    })
-    menuIcon.style.color = "var(--second-color)"
-    navegacao.style.backgroundColor = "var(--prime-color)"
-    document.getElementById("verMaisBtn").style.color = "var(--second-color)"
-    document.getElementById("suBody").style.backgroundColor = "var(--second-color)"
-    document.getElementById("suBody").style.color = "var(--prime-color)"
-    document.getElementsByTagName("body")[0].style.background = "fixed linear-gradient(135deg , #191c23,  #65758f)"
+    root.style.setProperty("--prime-color","#e9e3db")
+    root.style.setProperty("--second-color", "#0D1117")
+    root.style.setProperty("--third-color", "#39414E")
+    root.style.setProperty("--bg-color-inSubody", "rgba(0, 2, 23, 0.5)")
+    root.style.setProperty("--bgHover-color-inSubody", "rgba(0, 2, 23, 0.8)")
+    document.getElementsByTagName("body")[0].style.background = "fixed linear-gradient(120deg , #191c23,  #65758f)"
 }

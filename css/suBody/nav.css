@@ -22,5 +22,5 @@
 }
 .navegacao__item:active, .navegacao__item:hover, .navegacao__item--menu:hover{
     background-color: var(--second-color);
-    color: #fff;
+    color: var(--prime-color);
 }

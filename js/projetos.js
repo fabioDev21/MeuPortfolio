@@ -1,4 +1,3 @@
-
 //Definição de variáveis para os projetos
 let areaUm = document.getElementById("cardProjetoUm")
 let itemProjetoUm = document.getElementById("projetoUm")

@@ -10,41 +10,39 @@
     border-radius: 1em;
     width: 90%;
     height: 25%;
-    background-color: #f0f8ff;
-    filter: drop-shadow(0 10px 1em #000);
+    background-color: var(--third-color);
 }
 #cardSobreMim > .cardsSobTela__desc{
     height: 40%;
 }
 #cardNav > .cardsSobTela__title, #cardIdioma > .cardsSobTela__title{
     font-size: 22px;
-    color: var(--second-color);
+    color: var(--prime-color);
 }
-#cardNav > span,#cardIdioma > a, #cardIdioma > span,#cardSobreMim > span, .cardsSobTela > a{
+#cardNav > span, #cardIdioma > a, #cardIdioma > span,#cardSobreMim > span, .links__nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0d11175b;
-    color: var(--third-color);
+    color: var(--prime-color);
     padding: 0.3em;
     border-radius: 5px;
     width: 85%;
-    cursor: pointer;
     transition: 0.4s;
 }
-.cardsSobTela > a{
+.links__nav{
     justify-content: center;
     width: 50%;
     font-size: 18px;
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--prime-color);
 }
 .cardsSobTela > span > .cardsSobTela__desc{
     font-size: 20px;
     margin-inline-end: 10px;
 }
 .cardsSobTela > span:hover, .cardsSobTela > a:hover{
-    color: #f0f8ff;
+    color: var(--second-color);
     background-color: rgba(24, 27, 32, 0.808);
 }
 .cardsSobTela > span > img{
@@ -90,12 +88,12 @@
 #cardProjetoUm,#cardProjetoDois, #cardProjetoTres{
     display: none;
     align-content: center;
-    bottom: 40%;
+    bottom: 20%;
     background-color: var(--third-color);
 }
 .links__projetos > a{
-    color: #f0f8ff;
-    background-color: var(--second-color);
+    color: var(--second-color);
+    background-color: var(--prime-color);
     text-align: center;
     text-decoration: none;
     padding: 0.5em;
@@ -119,10 +117,13 @@
 }
 #cardProjetoUm > span > img,#cardProjetoDois > span > img, #cardProjetoTres > span > img{
     width: 300px;
-    margin: auto;
+    margin: 0.5em auto;
 }
 .card__tecnos{
     margin: 1em;
+    
+}
+.card__tecnos > a{
 }
 .card__tecnos > p{
     font-size: 20px;
@@ -130,5 +131,6 @@
 }
 .card__tecnos > span{
     display: flex;
+    background-color: transparent;
     justify-content: space-around;
 }
