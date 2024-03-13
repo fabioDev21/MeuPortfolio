@@ -1,13 +1,9 @@
 #navegacao{
     grid-area: navegacao;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0em auto;
     border-radius: 30px;
-    padding: 0.3em;
-    width: 50%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
     background-color: var(--prime-color);
 }
 .navegacao__item, .navegacao__item--menu{
@@ -16,11 +12,64 @@
     font-size: 24px;
     border-radius: 35px;
     transition: 0.4s;
+    cursor: pointer;
 }
 .navegacao__item--menu{
     border-radius: 10px;
 }
 .navegacao__item:active, .navegacao__item:hover, .navegacao__item--menu:hover{
+    filter: drop-shadow(0 0 0.20em var(--third-color));
     background-color: var(--second-color);
     color: var(--prime-color);
+}
+
+/* Nav desktop */
+#navDesktop{
+    display: none;
+    justify-content: space-between;
+    padding: 0.6em 0.3em;
+    height: 100%;
+    margin: 0em auto;
+    border-radius: 30px;
+}
+#navDesktop__opcs{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.navDesktop__opcs--item{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.3em;
+    text-decoration: none;
+    border-radius: 30px;
+    color: var(--second-color);
+    transition: all 0.4s;
+}
+.navDesktop__opcs--item:hover{
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 0.335em var(--second-color));
+    color: var(--prime-color);
+    background-color: var(--second-color);
+}
+
+/* Nav mobile */
+#navMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em;
+    margin: 0em auto;
+    height: 100%;
+    border-radius: 30px;
+}
+
+/* Definição de medias queries para o nav */
+@media screen and (min-width: 1080px) {
+    #navDesktop{
+        display: flex;
+    }
+    #navMobile{
+        display: none;
+    }
 }

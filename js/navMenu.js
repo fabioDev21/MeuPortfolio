@@ -1,11 +1,16 @@
 // Definição das funções para o menu idioma 
-let languageIcon = document.getElementById("languageIcon")
 let cardsSobTela = document.getElementsByClassName("cardsSobTela")
 let escureceTela = document.getElementById("escureceTela")
 let navegacao = document.getElementById("navegacao")
 let root = document.querySelector(":root")
 
-languageIcon.addEventListener("click", mostraMenuIdioma)
+// Array.from necessário pois estou puxando do html um elemento de classe
+let languageIcon = Array.from(document.getElementsByClassName("languageIcon"))
+
+languageIcon.forEach(a =>{
+    a.addEventListener("click", mostraMenuIdioma)
+})
+
 function mostraMenuIdioma(){
     languageIcon.title = ""
     escureceTela.style.display = "block"
@@ -23,9 +28,11 @@ function mostraMenuNav(){
 }
 
 // Definição do light mode da página
-let sunMode = document.getElementById("sunMode")
+let sunMode = Array.from(document.getElementsByClassName("sunMode"))
 
-sunMode.addEventListener("click", ativarTema)
+sunMode.forEach(a => {
+    a.addEventListener("click", ativarTema)
+})
 
 function ativarTema(){
     if(sunMode.title == "Ativar modo claro"){
