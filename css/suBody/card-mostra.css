@@ -1,15 +1,18 @@
 .cardsSobTela{
     position: absolute;
-    left: 5%;
-    bottom: 70%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 0.9em;
     padding: 1em;
     border-radius: 1em;
-    width: 90%;
-    height: 25%;
+    max-width: 350px;
+    height: 320px;
     background-color: var(--third-color);
 }
 #cardSobreMim > .cardsSobTela__desc{
@@ -123,8 +126,6 @@
     margin: 1em;
     
 }
-.card__tecnos > a{
-}
 .card__tecnos > p{
     font-size: 20px;
     font-weight: 500;
@@ -134,3 +135,9 @@
     background-color: transparent;
     justify-content: space-around;
 }
+
+@media screen and ( min-width: 1024px){
+    .cardsSobTela{
+        max-width: 500px;
+    }
+};

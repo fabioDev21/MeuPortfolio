@@ -9,10 +9,10 @@
 #sobre > .bloco{
     display: flex;
     align-items: center;
-    padding: 0.5em;
     width: 90%;
     max-width: 660px;
     margin: auto;
+    padding: 1.3em;
 }
 #sobre > .titulo{
     cursor: default;
@@ -43,9 +43,22 @@
 }
 
 /* Definição de media queries */
-
-@media screen and (min-width: 1080px){
+@media screen and (max-width: 500px){
     #sobre > .bloco{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 1.3em;
+    }
+    #foto-perfil{
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #sobre > .bloco{
+        display: flex;
+        align-items: center;
         width: 60%;
     }
 }

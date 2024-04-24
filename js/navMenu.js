@@ -61,3 +61,15 @@ function temaEscuro(){
     root.style.setProperty("--bgHover-color-inSubody", "rgba(0, 2, 23, 0.8)")
     document.getElementsByTagName("body")[0].style.background = "fixed linear-gradient(120deg , #191c23,  #65758f)"
 }
+
+// Area de testes
+
+let sobreBtn = document.getElementById("sobreBtn")
+let sobre = document.getElementById("contatos")
+
+function scrollandoParaOElemento(){
+    sobre.scrollTo("behavior");
+// TODO: fazer funcionar
+}
+
+sobreBtn.addEventListener("click", scrollandoParaOElemento)

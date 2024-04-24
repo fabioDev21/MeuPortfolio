@@ -57,3 +57,4 @@ function abrirCardSobre(){
     cardSobre.style.display = "flex"
     escureceTela.style.display = "block"
 } 
+
