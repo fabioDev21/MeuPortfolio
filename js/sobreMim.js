@@ -51,7 +51,7 @@ function desrotateBlocoSobre(){
     document.getElementById("foto-perfil").style.filter = "none"
 }
 
-verMaisBtn.addEventListener("click", abrirCardSobre)
+// verMaisBtn.addEventListener("click", abrirCardSobre)
 function abrirCardSobre(){
     let cardSobre = document.getElementsByClassName("cardsSobTela")[2]
     cardSobre.style.display = "flex"

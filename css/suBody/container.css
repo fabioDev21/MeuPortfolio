@@ -1,0 +1,63 @@
+.container{
+    position: relative;
+    display: grid;
+    padding: 1.3em;
+    justify-content: center;
+    grid-template-areas: 
+    "sobre"
+    "projetos"
+    "contatos";
+    gap: 5em;
+    grid-template-rows: repeat(2, 100vh), 30vh;
+}
+#contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 1em;
+    max-width: 350px;
+    margin: auto;
+    text-align: end;
+    font-size: 1.3em;
+    color: #fff;
+}
+#footer__titulo{
+    font-size: 34px;
+}
+footer > span{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 1em;
+}
+footer > span > a{
+    text-align: center;
+}
+#hoverIcon{
+    transition: .4s;
+}
+#socialMedia__icon{
+    width: 80px;
+}
+.socialMedia__link:hover #hoverIcon{
+    fill: var(--second-color);
+}
+.link-text{
+    color: var(--prime-color);
+    text-decoration: none;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+dialog{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: transparent;
+    background-color: var(--prime-color);
+    
+}

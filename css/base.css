@@ -4,13 +4,91 @@
     --prime-color: #e9e3db;
     --second-color: #0D1117;
     --third-color: #39414E;
+    --joker-color: #FFB169;
     --bg-color-inSubody: rgba(0, 2, 23, 0.5);
     --bgHover-color-inSubody: rgba(0, 2, 23, 0.8);
 }
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+}
+
+body{
+    background:fixed linear-gradient(120deg , #191c23, #65758f);
+    color: var(--prime-color);
+}
+
+.sunMode,
+.menuIcon{
+    color: var(--second-color);
+    padding: .22em;
+    font-size: 24px;
+    border-radius: 35px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.sunMode:active, .sunMode:hover,
+.menuIcon:active, .menuIcon:hover{
+    filter: drop-shadow(0 0 0.20em var(--third-color));
+    background-color: var(--second-color);
+    color: var(--prime-color);
+}
+
+/* Nav desktop */
+#navDesktop, #navMobile{
+    display: none;
+    width: 450px;
+    padding: .5em;
+    margin: 2em auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--prime-color);
+}
+.navDesktop__opcs{
+    display: flex;
+    min-width: 65%;
+    justify-content: space-around;
+}
+.navDesktop__opcs--item{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.3em .5em;
+    text-decoration: none;
+    border-radius: 30px;
+    color: var(--second-color);
+    transition: all 0.4s;
+}
+.navDesktop__opcs--item:hover{
+    scale: 1.1;
+    filter: drop-shadow(0 0 0.3em var(--second-color));
+    color: var(--prime-color);
+    background-color: var(--second-color);
+}
+
+/* Nav mobile */
+#navMobile{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    width: 200px;
+}
+
+/* Definição de medias queries para o nav */
+@media screen and (min-width: 1080px) {
+    #navDesktop{
+        display: flex;
+    }
+    #navMobile{
+        display: none;
+    }
 }

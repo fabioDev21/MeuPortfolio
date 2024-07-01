@@ -1,64 +1,56 @@
 #sobre{
     grid-area: sobre;
-    transition: 0.4s;
 }
-#sobre:hover{
-    transform: translateY(-3px);
-    filter: drop-shadow(0 0 0.5rem var(--prime-color));
-}
-#sobre > .bloco{
+.sobre__desc{
+    height: 60vh;
+    width: 500px;
+    margin: 2em auto;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    width: 90%;
-    max-width: 660px;
-    margin: auto;
-    padding: 1.3em;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 30px;
+    border-radius: 15px;
+    color: var(--prime-color);
 }
-#sobre > .titulo{
-    cursor: default;
-}
-#sobre > .bloco > #sobre__texto{
-    padding-inline-start: 1em;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: default;
+.sobre__desc div{
+    padding: .5em;
+    background-color: var(--second-color);
+    border-radius: 15px;
 }
 #foto-perfil{
-    border-radius: 20px;
+    max-width: 250px;
+    border-radius: 5px;
     transition: 0.4s;
-    vertical-align: middle;
+    filter: drop-shadow( 0 0 1em var(--joker-color));
 }
-#verMaisBtn{
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: underline;
+.sobre__projetos{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.arrow__btn{
     color: var(--second-color);
-    filter: drop-shadow(0 0 0.20em var(--third-color));
-    transition: 0.4s;
-}
-#verMaisBtn:active, #verMaisBtn:hover{
-    filter: drop-shadow(0 0 1.5em var(--second-color));
+    background-color: var(--joker-color);
+    font-size: 24px;
+    padding: .3em .6em;
+    border-radius: 50px;
 }
 
 /* Definição de media queries */
-@media screen and (max-width: 500px){
-    #sobre > .bloco{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        gap: 1.3em;
+@media screen and (max-width: 500px) {
+    .sobre__desc{
+        margin: 0em auto;
+        height: 50vh;
+        width: 100%;
+        font-size: 20px;
+        gap: 1em;
     }
-    #foto-perfil{
-        align-self: center;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    #sobre > .bloco{
-        display: flex;
-        align-items: center;
-        width: 60%;
+    .sobre__projetos{
+        margin-top: 6em;
     }
 }
