@@ -3,13 +3,13 @@
 }
 .sobre__desc{
     height: 60vh;
-    width: 500px;
+    width: 400px;
     margin: 2em auto;
     display: flex;
-    flex-direction: column;
     text-align: center;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1em;
     font-size: 30px;
     border-radius: 15px;
@@ -17,14 +17,23 @@
 }
 .sobre__desc div{
     padding: .5em;
-    background-color: var(--second-color);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 15px;
+    background-color: var(--second-color);
+    transition: .7s;
+
+    &:hover{
+        transform: translateY(-5px);
+        border-bottom: solid 5px var(--joker-color);
+    }
 }
 #foto-perfil{
     max-width: 250px;
     border-radius: 5px;
     transition: 0.4s;
-    filter: drop-shadow( 0 0 1em var(--joker-color));
 }
 .sobre__projetos{
     margin-top: 5em;
@@ -42,9 +51,9 @@
 }
 
 /* Definição de media queries */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .sobre__desc{
-        margin: 0em auto;
+        margin-top: 0;
         height: 50vh;
         width: 100%;
         font-size: 20px;
@@ -52,5 +61,37 @@
     }
     .sobre__projetos{
         margin-top: 6em;
+    }
+}
+@media (max-height: 800px){
+    .sobre__desc{
+        height: 50vh;
+        width: 100%;
+        font-size: 20px;
+        gap: .5em;
+    }
+    .sobre__projetos{
+        margin-top: 5.5em;
+    }
+    #navMobile{
+        margin-top: 1em;
+        margin-bottom: .3em;
+    }
+}
+@media (min-height: 800px){
+    .sobre__desc{
+        height: 50vh;
+        width: 100%;
+        font-size: 22px;
+        gap: .5em;
+        margin-bottom: 2px;
+    }
+    .sobre__projetos{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    #navMobile{
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 }

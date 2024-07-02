@@ -22,6 +22,7 @@
     color: #fff;
 }
 #footer__titulo{
+    text-align: center;
     font-size: 34px;
 }
 footer > span{
@@ -50,14 +51,36 @@ dialog::backdrop{
 }
 dialog{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
     left: 0;
     right: 0;
     top: 10%;
     border-radius: 15px;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 220px;
     border: transparent;
     background-color: var(--prime-color);
-    
+
+    a{
+        background-color: aqua;
+        
+        button{
+            padding: 1em  2.5em;
+            margin: 5px;
+        }
+    }
+
+    #closeBtn{
+        z-index: 99;
+        top: 15px;
+        right: 15px;
+        background-color: aqua;
+        border-radius: 30px;
+    }
+
+
 }

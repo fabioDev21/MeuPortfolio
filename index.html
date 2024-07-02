@@ -11,13 +11,12 @@
     <link rel="shortcut icon" href="assets/square-pen-solid.svg" type="image/x-icon">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/b5d27f2592.js" crossorigin="anonymous"></script>
-    <script src="js/projetos.js" defer></script>
     <title>Portfolio Fabio da Silva</title>
 </head>
 <body>
     <nav id="navDesktop">
         <div class="navDesktop__opcs">
-            <!-- <a class="navDesktop__opcs--item" href="#sobre">Sobre mim</a> -->
+            <a class="navDesktop__opcs--item ativo" href="#projetos">Home</a>
             <a class="navDesktop__opcs--item" href="#projetos">Projetos</a>
             <a class="navDesktop__opcs--item" href="#contatos">Contato</a>
         </div>
@@ -46,50 +45,11 @@
             </div>
             <span class="sobre__projetos">
                 <a href="#projetos" class="link-text arrow__btn"><i class="fa-solid fa-arrow-down"></i></a>
-                <p>Confira meus projetos!</p>
+                <p>Confira meus projetos principais!</p>
             </span>
 
         </section>
             <!-- TODO: dialog a se aplicar quando for o usuário clicar em saiba mais dentro da box do projeto -->
-        <dialog id="menuSelect">
-            <a href="#projetos"><button>Projetos</button></a>
-            <a href="#contatos"><button>Contato</button></a>
-            <p id="closeBtn">X</p>
-        </dialog>
-        <dialog style="display: none;">
-            <img src="assets/projetos/spotifyImersao.png" alt="imersaoSpotify" title="Projeto Spotify">
-            <p class="projetos__item--desc title"> App de Música</p>
-            <p class="projetos__item--desc techs"> HTML | CSS | Javascript</p>
-            <p class="projetos__item--desc text"> Nesse projeto estudei com afinco alguns conceitos de DOM em Javascript, através do input do usuário é possível encontrar um cantor. Em CSS e HTML, conheci mais conceitos como display flex e grid. </p>
-            <span class="projetos__item--desc links">
-                <a href=""><button>Acesse o site</button></a>
-                <a href=""><button>Veja o repositório</button></a>
-            </span>
-        </dialog>
-        <dialog style="display: none;"">
-            <img src="assets/projetos/projeto7daysofcode.jpeg" alt="imersaoSpotify" title="Landing page">
-            <div class="projetos__item--desc">
-                <p class="projetos__item--desc title"> Landing page </p>
-                <p class="projetos__item--desc techs"> HTML | CSS </p>
-                <p class="projetos__item--desc text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eum vero dolore</p>
-                <span class="projetos__item--desc links">
-                    <a href=""><button>Acesse o site</button></a>
-                    <a href=""><button>Veja o repositório</button></a>
-                </span>
-            </div>
-        </dialog>
-        <dialog style="display: none;"">
-            <img src="assets/projetos/receitarcozinhar.png" alt="imersaoSpotify" title="Site de receitas">
-            <div class="projetos__item--desc">
-                <p class="projetos__item--desc title"> Site de receitas</p>
-                <p class="projetos__item--desc techs"> HTML </p>
-                <p class="projetos__item--desc text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eum vero dolore</p>
-                <span class="projetos__item--desc links">
-                    <a href=""><button>Acesse o site</button></a>
-                    <a href=""><button>Veja o repositório</button></a>
-                </span>
-            </div>
-        </dialog>
         <section id="projetos">
             <!-- TODO: Conceitos a produzir, usar dialog -->
              <!-- TODO: Aplicar conceito de api nos projetos, puxar de um json -->

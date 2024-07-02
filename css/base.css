@@ -10,7 +10,6 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
 }
 
 *{
@@ -56,6 +55,7 @@ body{
 }
 .navDesktop__opcs{
     display: flex;
+    gap: 1em;
     min-width: 65%;
     justify-content: space-around;
 }
@@ -74,6 +74,12 @@ body{
     color: var(--prime-color);
     background-color: var(--second-color);
 }
+.ativo{
+    scale: 1.1;
+    filter: drop-shadow(0 0 0.3em var(--second-color));
+    color: var(--prime-color);
+    background-color: var(--second-color);
+}
 
 /* Nav mobile */
 #navMobile{
@@ -84,7 +90,7 @@ body{
 }
 
 /* Definição de medias queries para o nav */
-@media screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
     #navDesktop{
         display: flex;
     }
