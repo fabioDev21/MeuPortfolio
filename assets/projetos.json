@@ -1,0 +1,29 @@
+{
+    "projetos":{
+        "projeto_um": {
+            "nome": "Gerenciador de imagens",
+            "descricao": "Esse projeto foi meu passo inicial para aprender sobre o backend, nele verifiquei as questões de roteamento com Express e consumindo libs além dela com Node.js. No frontend consegue utilizar uma lógica de carroussel images que ficou muito boa, chegando a um bom resultando visualmente e funcionalmente.",
+            "caminho": "./assets/projetos/picsfile-projeto.png"
+        },
+        "projeto_dois":{
+            "nome": "Calculadora de IMC",
+            "descricao": "Projeto de calculadora, desenvolvido com base em um desafio do curso de formação frontend do professor Matheus Battisti. Com este projeto pude aprender conceitos iniciais de React como components e hooks. Aplicação bem simples de calculadora IMC, buscando tirar proveito do desafio proposto no curso mesmo.",
+            "caminho": "./assets/projetos/calcIMC-projeto.png"
+        },
+        "projeto_tres":{
+            "nome": "Frontpage Spotify",
+            "descricao": "Nesse projeto estudei com afinco alguns conceitos de DOM em Javascript, através do input do usuário é possível encontrar um cantor. Em CSS e HTML, conheci mais conceitos como display flex e grid.",
+            "caminho": "./assets/projetos/spotifyImersao.png"
+        },
+        "projeto_quatro":{
+            "nome": "Landpage Empresarial",
+            "descricao": "Página desenvolvida afim de fixar conceitos já antes vistos de HTML e descobrir novas ideias com CSS",
+            "caminho": "./assets/projetos/projeto7daysofcode.jpeg"
+        },
+        "projeto_cinco":{
+            "nome": "Site de receitas",
+            "descricao": "Uns dos primeiros projetos desenvolvidos durante o curso de Análise e desenvolvimento de Sistema. Pude colococar em prática muitos conceitos vistos em aula.",
+            "caminho": "./assets/projetos/receitarcozinhar.png"
+        }
+    }
+}
