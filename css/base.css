@@ -77,8 +77,12 @@ body{
 .ativo{
     scale: 1.1;
     filter: drop-shadow(0 0 0.3em var(--second-color));
-    color: var(--prime-color);
-    background-color: var(--second-color);
+    color: var(--second-color);
+    background-color: var(--joker-color);
+}
+a:is(.ativo):hover{
+    color: var(--second-color);
+    background-color: var(--joker-color);
 }
 
 /* Nav mobile */
