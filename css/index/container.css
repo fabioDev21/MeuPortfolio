@@ -51,34 +51,44 @@ dialog::backdrop{
 }
 dialog{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    justify-content: center;
+    /* text-align: center; */
     left: 0;
     right: 0;
     top: 10%;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 0 auto;
     width: 210px;
     height: 220px;
     border: transparent;
     background-color: var(--prime-color);
 
-    a{
-        background-color: aqua;
-        
+    .itensModal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        }
+
+    a{        
         button{
             padding: 1em  2.5em;
             margin: 5px;
+            background-color: var(--second-color);
+            color: #fff;
+            border: 2px solid #ffffff39;
+            border-radius: 5px;
         }
     }
 
     #closeBtn{
+        position: absolute;
         z-index: 99;
-        top: 15px;
-        right: 15px;
-        background-color: aqua;
+        font-size: 28px;
+        top: 0px;
+        right: 5px;
+        color: var(--second-color);
         border-radius: 30px;
     }
 
@@ -86,8 +96,7 @@ dialog{
 }
 @media (max-width: 500px) {
     .container{
-    gap: 9em;
-    grid-template-rows: repeat(2, 110vh), 30vh;
-    /* border: 2px solid red; */
+        gap: 9em;
+        grid-template-rows: repeat(2, 110vh), 30vh;
     }
 }
