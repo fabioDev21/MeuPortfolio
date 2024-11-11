@@ -17,6 +17,6 @@ Irei postar em imagem a versão 1.0 em breve!
 Features a implementar futuramente:
 
 - Modal dos projetos
-- Página apenas dos projetos
+- Página apenas dos projetos - concluído 02/07
 - Menu para dispositivos mobile
 - Tema claro
