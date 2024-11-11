@@ -84,3 +84,10 @@ dialog{
 
 
 }
+@media (max-width: 500px) {
+    .container{
+    gap: 9em;
+    grid-template-rows: repeat(2, 110vh), 30vh;
+    /* border: 2px solid red; */
+    }
+}
